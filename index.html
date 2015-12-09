@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title></title>
+		 <meta name="description" content="free website template" />
+		  <meta name="keywords" content="enter your keywords here" />
+		  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+		  <link rel="stylesheet" type="text/css" href="css/style.css" />
+		  <script type="text/javascript" src="js/jquery.min.js"></script>
+		  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		  <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+		  <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+		
+    });
+	
+	$('#status').click(function(){
+		var vmusic =document.getElementById('audio');
+			vmusic.src = 'musica.mp3';
+				if($('#status').html() =="Pause")
+				{
+					vmusic.pause();
+					$('#status').html("Play");
+				}
+				else
+				{
+					vmusic.play();
+					$('#status').html("Pause");				 		
+				}
+	});
+    </script>
+	</head>
+	<body>
+	
+     
+	  <div id="header">
+	    <div id="menubar">
+          <ul id="menu">
+           <li class="current"><a href="index.html">Início</a></li>
+            <li><a href="sinopse.html">Sinopse</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="trailer.html">Trailer</a></li>
+            <li><a href="contato.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+	  <div id="banner_image">
+	    <div id="slider-wrapper">        
+          <div id="slider" class="nivoSlider">
+            <img src="images/capa.jpg" alt="" />
+            <img src="images/capa2.jpg" alt="" />
+		  </div>
+		</div>
+	  </div>
+	  <br /><br /><br /><br />
+	  
+	
+		
+	  <div id="content">
+		<div class="content_item">
+		  <h1 align="center">Deus não está morto</h1><br />
+          <p class="inicio"> Deus Não Está Morto (no original em em inglês: God's Not Dead) é um filme de drama da indústria cinematográfica cristã de 2014,
+		  dirigido por Harold Cronk e estrelado por Kevin Sorbo, Shane Harper, David A. R. White e Dean Cain. <br />
+		  O filme foi lançado nos cinemas
+		  norte-americanos em 21 de março de 2014, pela Pure Flix Entertainment e 21 de agosto de 2014 nos circuitos brasileiros pela
+		  distribuidora Graça Filmes.</p>
+		  
+		<audio id="audio" ></audio>
+		<button id="status">Play</button>
+	
+        </div><!--close content_item-->
+	   
+    <div id="footer">  
+		All Right Reserved
+    </div><!--close footer-->	
+  </div><!--close main-->	
+	</body>
+</html>

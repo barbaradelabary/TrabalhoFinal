@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta name="description" content="free website template" />
+		  <meta name="keywords" content="enter your keywords here" />
+		  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+		  <link rel="stylesheet" type="text/css" href="css/style.css" />
+		  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+		  <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+		  <script type="text/javascript" src="js/jquery.min.js"></script>
+		  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		  <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+		  <script type="text/javascript" src="js/jquery-ui.js"></script>
+		  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		  <link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css"/>
+		  
+		<meta charset="UTF-8">
+		<title>document</title>
+		<script src="../jquery-2.1.4.min.js"></script>
+		<script src="jquery.maskedinput.min.js"></script>
+		
+		<script>
+			$(function(){
+				$('#txtFone').mask('(99)9999-9999');
+				$('#txtCep').mask('99999-999');
+				$('#txtCpf').mask('999999999-99');
+				$('#txtData').mask('99/99/9999');
+				
+				$('#txtPlaca').blur(function(){
+					var maiusculo = $('#txtPlaca').val().toUpperCase;
+				});
+			});
+			
+			$('#txtData').datepicker();
+		</script>
+		
+ 	</head>
+	<body>
+ <div id="header">
+	    <div id="menubar">
+          <ul id="menu">
+           <li class="current"><a href="index.html">Início</a></li>
+            <li><a href="sinopse.html">Sinopse</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="trailer.html">Trailer</a></li>
+            <li><a href="contato.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+	  <br /><br /><br /><br />
+		<div align="center">
+			<p>Cadastre-se e receba notícias no seu e-mail.</p>
+			<label for="txtNome">Nome:</label>
+			<input type="text" id="txtNome" placeholder="Digite seu nome completo"><br />
+			<label for="txtCpf">CPF:</label>
+			<input type="text" id="txtCpf"><br />
+			<label for="txtEmail">Email:</label>
+			<input type="text" id="txtEmail"><br />
+			<label for="txtFone">Telefone:</label>
+			<input type="text" id="txtFone"><br />
+			<label for="txtCep">CEP:</label>
+			<input type="text" id="txtCep"><br />
+			<label for="txtEndereco">Endereço:</label>
+			<input type="text" id="txtEndereco"><br />
+			<label for="txtData">Data:</label>
+			<input type="text" id="txtData" placeholder="dd/mm/aaaa"><br />
+		</div>
+	</body>
+</html>
